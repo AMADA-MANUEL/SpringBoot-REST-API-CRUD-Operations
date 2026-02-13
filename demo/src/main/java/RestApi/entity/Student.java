@@ -11,11 +11,10 @@ public class Student {
     private int rollNo ;
     @Column(name= "student_name")
     private String name;
-    @Column(name= "student_name")
+    @Column(name= "student_percentage")
     private float percentage ;
-    @Column(name= "student_percentage")
+    @Column(name= "student_branch")
     private String branch;
-    @Column(name= "student_percentage")
 
 
 
