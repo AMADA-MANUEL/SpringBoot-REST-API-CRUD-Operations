@@ -20,6 +20,16 @@ public class Student {
         return rollNo;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "rollNo=" + rollNo +
+                ", name='" + name + '\'' +
+                ", percentage=" + percentage +
+                ", branch='" + branch + '\'' +
+                '}';
+    }
+
     public void setRollNo(int rollNo) {
         this.rollNo = rollNo;
     }
