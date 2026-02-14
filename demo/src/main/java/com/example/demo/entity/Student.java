@@ -1,4 +1,4 @@
-package RestApi.entity;
+package com.example.demo.entity;
 
 import jakarta.persistence.*;
 
@@ -16,22 +16,22 @@ public class Student {
     @Column(name= "student_branch")
     private String branch;
 
-    public int getRollNo() {
-        return rollNo;
+    public Student(String name, float percentage, String branch) {
+        this.name = name;
+        this.percentage = percentage;
+        this.branch = branch;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "rollNo=" + rollNo +
-                ", name='" + name + '\'' +
-                ", percentage=" + percentage +
-                ", branch='" + branch + '\'' +
-                '}';
-    }
+    public Student (){}
+
+
 
     public void setRollNo(int rollNo) {
         this.rollNo = rollNo;
+    }
+
+    public int getRollNo() {
+        return rollNo;
     }
 
     public String getName() {
@@ -57,4 +57,18 @@ public class Student {
     public void setBranch(String branch) {
         this.branch = branch;
     }
+
+
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "rollNo=" + rollNo +
+                ", name='" + name + '\'' +
+                ", percentage=" + percentage +
+                ", branch='" + branch + '\'' +
+                '}';
+    }
 }
+
+
